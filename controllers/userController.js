@@ -55,7 +55,7 @@ exports.updateUser = async (req, res) => {
 
         const updatedUser = await user.save()
         res.status(200).json({
-            message: "User updated",
+            message: "User updated successfully",
             user: updatedUser
         })
     } catch (error) {
