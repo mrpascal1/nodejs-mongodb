@@ -9,6 +9,9 @@ const userSchema = new mongoose.Schema({
     },
     age: {
         type: Number
+    },
+    phone: {
+        type: String
     }
     },
     {
