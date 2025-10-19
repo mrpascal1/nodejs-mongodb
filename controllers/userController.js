@@ -11,9 +11,9 @@ exports.getUserById = async (req, res) => {
         const user = await User.findById(req.params.id)
         if (!user) {
             return res.status(404).json({
-                message: 'User not found'
+                message: 'User not found, please check user id'
             })
-            
+
         }
 
         res.status(200).json(user)
